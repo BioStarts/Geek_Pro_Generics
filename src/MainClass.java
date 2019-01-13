@@ -25,11 +25,10 @@ public class MainClass {
         Box<Orange> o = new Box<>(new ArrayList<>()); //создаемкоробку Апельсинов
         o.frBox.add(new Orange());//добавляем Апельсин в коробку
         o.frBox.add(new Orange());
-        o.frBox.add(new Orange());
         System.out.println("Orange count in Box: " + c.frBox.get(0).sizeF());//получаем размер коробки (количество апельсинов)
         System.out.println("Orange weight" + c.getWeight());//получаем вес одного Апельсина
 
-        System.out.println("Compare weight Orange and Apple boxes: " + o.compare(c));// сравниваем вес коробки Апельсинов и Яблок
+        System.out.println("Compare weight Orange(" + o.getWeight() + ") and Apple(" + c.getWeight() + ") boxes: " + o.compare(c));// сравниваем вес коробки Апельсинов и Яблок
 
         b.pourBoxes(c);//пересыпаем яблоки из одной коробки в другую
         System.out.println("Pour Apples from b("+ b.frBox.size() + ")" + "to c(" + (c.frBox.size()-b.frBox.size()) + ") " + "Boxes ");

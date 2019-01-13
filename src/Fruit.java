@@ -1,11 +1,13 @@
 public abstract class Fruit {
     String Name;
-    Integer Weight;
+    Double Weight;
 
-    public Fruit(String name, Integer weight) {
+    public Fruit(String name, double weight) {
         Name = name;
         Weight = weight;
     }
 
-    public abstract double sizeF();
+    public double sizeF(){
+        return Weight;
+    }
 }

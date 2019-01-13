@@ -2,11 +2,7 @@ public class Orange extends Fruit {
 
 
     public Orange() {
-        super("Orange", 2);
+        super("Orange", 1.5);
     }
 
-    @Override
-    public double sizeF() {
-        return this.Weight;
-    }
 }

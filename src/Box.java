@@ -31,5 +31,13 @@ public class Box<T extends Fruit> {
         this.frBox.clear();
     }
 
+    //метод добавляющий несколько фруктов в коробку
+
+    public void addInBox (int c, T a){
+        for (int i = 0; i < c; i++) {
+        this.frBox.add(a);
+        }
+    }
+
 
 }

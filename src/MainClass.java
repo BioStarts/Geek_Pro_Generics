@@ -33,6 +33,9 @@ public class MainClass {
         b.pourBoxes(c);//пересыпаем яблоки из одной коробки в другую
         System.out.println("Pour Apples from b("+ b.frBox.size() + ")" + "to c(" + (c.frBox.size()-b.frBox.size()) + ") " + "Boxes ");
 
+        c.addInBox(3,new Apple());//добавили еще 3 Яблока в коробку с
+        System.out.println(c.getWeight());
+
         //-----------------------------------------------------------------------------------------
 
         ArrayChangeElementsAndConvertToList<String> strArr = new ArrayChangeElementsAndConvertToList<>("1", "2"); // создаем массив строк (2 элемента)
